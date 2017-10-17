@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <script src="Assets/jquery-2.2.3.js"></script>
+      <script src="Assets/Script.js" defer></script>
+      <link href="Assets/Main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <script>
+    
+    </script>
+      <div id="slider"><!-- main screen -->
+          <div id="invis">
+              <div id="drop_zone" ondrop="drag_drop(event)" ondragover="return false" class="card"></div>
+          </div>
+      </div>
+      <div id="buttons"><!-- controls -->
+        <a href="#" id="back"><img src="Assets/Img/ArrowLeft.png" width="50px" height="60px"></a>
+        <a href="#" id="addRow"><img src="Assets/Img/Add.png" width="50px" height="70px"></a>
+        <a href="#" id="next"><img src="Assets/Img/ArrowNext.png" width="50px" height="60px"></a>
+      <div>
+        <!-- images  -->
+        <div id="object1" class="objects" draggable="true" ondragstart="drag_start(event)" >Image 1</div>
+        <div id="object2" class="objects" draggable="true" ondragstart="drag_start(event)" >Image 2</div>
+        <div id="object3" class="objects" draggable="true" ondragstart="drag_start(event)" >Image 3</div>
+        <div id="remove" class="objects" draggable="true" ondragstart="drag_start(event)" >remove object</div>
+      </div>
+  </body>
+</html>
